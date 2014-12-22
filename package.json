@@ -22,6 +22,7 @@
     "grunt-contrib-coffee": "~0.12.0",
     "grunt-contrib-compass": "~1.0.1",
     "grunt-nodemon": "~0.3.0",
-    "node-mysql": "~0.4.1"
+    "node-mysql": "~0.4.1",
+    "underscore": "~1.7.0"
   }
 }

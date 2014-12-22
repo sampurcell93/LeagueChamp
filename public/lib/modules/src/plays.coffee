@@ -2,8 +2,8 @@ define ["desc_parser"], (parser) ->
 
     class Play extends Backbone.Model
         parse: (response) ->
-            console.log(response);
-            response.description = parser.parse(response.description, response.play_type);
+            response.players = parser.parse(response.description, response.play_type);
+            response.game_date = new Date(response.game_date);
             response
     class Plays extends Backbone.Collection
         model: Play

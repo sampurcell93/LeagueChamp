@@ -12,8 +12,8 @@
       }
 
       Play.prototype.parse = function(response) {
-        console.log(response);
-        response.description = parser.parse(response.description, response.play_type);
+        response.players = parser.parse(response.description, response.play_type);
+        response.game_date = new Date(response.game_date);
         return response;
       };
 
